@@ -2,17 +2,15 @@ const addBtn = document.querySelector("#add-btn");
 const main = document.querySelector("#main");
 
 const saveNotes = () => {
-  // const notes = document.querySelectorAll('.note textarea');
-  // const noteTitle = document.querySelectorAll('.title')
 
   const noteItems = {
     notes: document.querySelectorAll(".note textarea"),
     notesTitle: document.querySelectorAll(".note .tool .title"),
   };
-  // console.log(notes);
+
   const data = [];
   noteItems.notes.forEach((note) => {
-    // data.push({})
+
     data.push({ note: note.value });
   });
 
